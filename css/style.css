@@ -186,6 +186,17 @@ body::-webkit-scrollbar-thumb {
       transform: translateX(-100%);
    }
 }
+/* Customize scrollbar */
+.page_2 .animated::-webkit-scrollbar {
+   width: 3px;
+   height: 5px;
+   background-color: #33b90343;
+}
+
+.page_2 .animated::-webkit-scrollbar-thumb {
+   background-color: #fff;
+   border-radius: 50px;
+}
 
 /* about us */
 .about_us {
