@@ -1,0 +1,633 @@
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+   font-family: "Poppins", sans-serif;
+   /* font-family: "Playfair Display", serif; */
+   color: #fff;
+}
+
+.common_style {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   width: 80%;
+   margin: 0 auto;
+}
+
+.middle_heading {
+   font-size: 35px;
+   text-transform: uppercase;
+}
+
+.text_uppercase {
+   text-transform: uppercase;
+}
+
+.page_width {
+   width: 100%;
+   background-color: #000;
+}
+
+/* code for scroll bar */
+body::-webkit-scrollbar{
+   width: 9px;
+   height: 9px;
+   background-color: #34b903;
+}
+body::-webkit-scrollbar-thumb {
+   background-color: #fff;
+   border-radius: 50px;
+ }
+
+#main_div {
+   overflow: hidden;
+}
+
+/* blur */
+#blur {
+   width: 20px;
+   height: 20px;
+   border-radius: 50%;
+   background-color: #7ef43a;
+   position: fixed;
+}
+
+#bigBlur {
+   width: 450px;
+   height: 450px;
+   border-radius: 50%;
+   background-color: #30611384;
+   position: fixed;
+   filter: blur(42px);
+}
+
+/* hero section */
+#navbar {
+   width: 100%;
+   position: fixed;
+   /* background: #1b1a1a; */
+   padding: 10px 0px;
+   color: #fff;
+   top: 0;
+   z-index: 99;
+}
+
+#navbar section img {
+   width: 100px;
+   cursor: pointer;
+}
+
+#navbar section ul {
+   display: flex;
+   gap: 40px;
+}
+
+#navbar section ul li {
+   list-style: none;
+}
+
+#navbar section ul li a {
+   text-decoration: none;
+   color: #fffcfc;
+   font-weight: 500;
+}
+
+/* code for mobile nav */
+.fas {
+   position: absolute;
+   right: 12px;
+   top: 10px;
+   font-size: 30px;
+   cursor: pointer;
+   font-weight: 500;
+   z-index: 999;
+   position: fixed;
+   display: none;
+}
+
+#hero_section {
+   width: 100%;
+   height: 100vh;
+   position: relative;
+}
+
+#hero_section video {
+   width: 100%;
+   height: 100%;
+   object-fit: cover;
+   position: fixed;
+   z-index: -1;
+}
+
+#EAT {
+   text-align: center;
+   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.6));
+   padding-top: 14%;
+   height: 100%;
+}
+
+#EAT h1 {
+   font-size: 100px;
+   font-family: "Playfair Display", serif;
+   font-weight: 900;
+   position: relative;
+   z-index: 1;
+}
+
+#EAT h1::before {
+   content: "EAT. DRINK. PLAY.";
+   position: absolute;
+   top: -3px;
+   margin-left: -4px;
+   -webkit-text-stroke: 3px #95C11E;
+   color: #000;
+   z-index: -1;
+}
+
+#EAT h2 {
+   padding: 10px 0px;
+}
+
+#EAT p {
+   line-height: 25px;
+   text-align: center;
+   padding: 0px 25%;
+}
+
+/* page 2 */
+.page_2 .animated {
+   display: flex;
+   overflow-x: auto;
+}
+
+.page_2 .animated section {
+   display: flex;
+   animation: textAnimation 20s linear infinite;
+
+}
+
+.page_2 .animated section h1 {
+   font-size: 110px;
+   white-space: nowrap;
+   margin-left: 10px;
+   font-family: "Playfair Display", serif;
+   font-weight: 800;
+   color: #000;
+   -webkit-text-stroke: 2px #fff;
+}
+
+@keyframes textAnimation {
+   from {
+      transform: translateX(0);
+   }
+
+   to {
+      transform: translateX(-100%);
+   }
+}
+
+/* about us */
+.about_us {
+   padding: 50px 0px;
+   text-align: center;
+}
+
+.about_text {
+   width: 47%;
+}
+
+.about_text h1 {
+   font-size: 50px;
+}
+
+.about_us p {
+   line-height: 27px;
+   padding-top: 10px;
+}
+
+.about_us img {
+   border-radius: 15px;
+   width: 220px;
+   height: 210px;
+}
+
+.about_images {
+   width: 73%;
+   padding: 30px 0px !important;
+   margin: 0 auto;
+}
+
+.about_images section img {
+   width: 310px;
+   height: 280px;
+   border-radius: 15px;
+   padding: 0px;
+}
+
+.about_images .about_img2 {
+   position: relative !important;
+}
+
+.about_images .about_img .overlay {
+   position: absolute !important;
+   width: 100%;
+   height: 99%;
+   background-color: #87b016;
+   top: 0;
+   left: 0;
+   display: flex;
+   /* align-items: center; */
+   justify-content: center;
+   text-align: center;
+   flex-direction: column;
+   padding: 10px;
+   border-radius: 15px;
+   opacity: 0;
+   transition: all .5s;
+
+}
+
+.about_images .about_img .overlay:hover {
+   opacity: 9;
+}
+
+.about_images .about_img .overlay p {
+   line-height: 26px;
+   color: #000;
+   padding: 10px;
+
+}
+
+.about_images .middle_heading {
+   font-size: 26px;
+   color: #000;
+
+}
+
+.sidcup {
+   display: flex;
+   width: 100%;
+   height: 30vh !important;
+   justify-content: space-between;
+   align-items: center;
+   background: linear-gradient(120deg, #68FF13, #23c955);
+}
+
+.sidcup section img {
+   width: 240px;
+   height: 240px;
+   object-fit: cover;
+}
+
+.sidcup_text {
+   width: 50%;
+}
+
+.sidcup section h4 {
+   font-size: 26px;
+   text-align: center;
+   line-height: 38px;
+   color: #000;
+   font-weight: 700;
+   font-family: "playfair", serif;
+}
+
+/* page 3 */
+.page_3 .common_style img {
+   width: 60px;
+}
+
+.page_3 {
+   text-align: center;
+   /* position: relative; */
+}
+
+.page_3 .page_3_contents {
+   width: 85%;
+   padding: 14% 0px;
+   position: relative;
+}
+
+.page_3 h4 {
+   line-height: 45px;
+   font-size: 28px;
+   padding: 0% 9%;
+   width: 100%;
+   font-family: "playfair", serif;
+
+}
+
+.page_3 .left,
+.page_3 .right {
+   position: absolute;
+}
+
+.page_3 .left {
+   top: 20%;
+   left: 4%;
+}
+
+.page_3 .right {
+   bottom: 22%;
+   right: 9%;
+}
+
+/* cards */
+.card {
+   padding: 50px 0px;
+}
+
+.card .common_style .cards {
+   width: 28%;
+   margin-bottom: 20px;
+}
+
+.card .cards1,
+.card .cards2,
+.card .cards3 {
+   height: 160px;
+   background-size: cover;
+   position: relative;
+   border-radius: 12px;
+   cursor: pointer;
+   overflow: hidden;
+}
+
+.card .cards1::before,
+.card .cards2::before,
+.card .cards3::before {
+   content: '';
+   position: absolute;
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 100%;
+   background-size: cover;
+   transition: transform 0.3s ease;
+}
+
+.card .cards1::before {
+   background-image: url("../img/top-tracer.avif");
+}
+
+.card .cards2::before {
+   background-image: url("../img/adventure.avif");
+}
+
+.card .cards3::before {
+   background-image: url("../img/golf-lessson.avif");
+}
+
+.card .cards1:hover::before,
+.card .cards2:hover::before,
+.cards3:hover::before {
+   transform: scale(1.1);
+}
+
+.card .cards1 h4,
+.card .cards2 h4,
+.card .cards3 h4 {
+   position: absolute;
+   background: linear-gradient(100deg, #68FF13, #23c955);
+   border-radius: 12px;
+   width: 100%;
+   height: 100%;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   transition: all 0.6s;
+   color: #000;
+}
+
+.card .cards1 h4:hover,
+.card .cards2 h4:hover,
+.card .cards3 h4:hover {
+   background: transparent;
+   color: #fff;
+}
+
+.card h1 {
+   font-size: 100px;
+   white-space: nowrap;
+   -webkit-text-stroke: 2px #fff;
+   color: transparent;
+   margin-bottom: -4.3%;
+}
+
+/* footer */
+#footer {
+   background: linear-gradient(100deg, #5adf0d, #05cb41);
+   position: relative;
+}
+
+#footer section {
+   width: 25%;
+}
+
+#footer img {
+   width: 120px;
+}
+
+#footer .f_img {
+   position: absolute;
+   width: 400px;
+}
+
+#footer section {
+   padding-top: 70px !important;
+   padding-bottom: 85px !important;
+}
+
+#footer section h5 {
+   font-size: 22px;
+   color: #000;
+   font-weight: 600;
+   cursor: pointer;
+}
+
+#footer section p {
+   color: #000;
+   font-weight: 500;
+   cursor: pointer;
+}
+
+@media only screen and (max-width:980px) {
+   .about_images {
+      width: 78%;
+      flex-wrap: wrap;
+   }
+
+   .about_images section {
+      margin-top: 10px;
+   }
+
+   .about_us {
+      gap: 25px;
+      width: 90%;
+   }
+
+   .about_text {
+      width: 42%;
+   }
+
+   .sidcup {
+      height: auto !important;
+   }
+
+   .page_3 .left {
+      top: 10%;
+      left: -4%;
+   }
+
+   .page_3 .right {
+      bottom: 14%;
+      right: 5%;
+   }
+
+   /* navbar */
+   #EAT{
+      padding-top: 18%;
+   }
+
+   #navbar {
+      margin-top: -20px;
+      display: none;
+   }
+
+   #navbar .common_style,
+   #navbar section ul {
+      flex-direction: column;
+      text-align: center;
+   }
+
+   #navbar .common_style {
+      background-color: #000;
+      width: 100%;
+      height: 100vh;
+      position: relative;
+      justify-content: space-evenly;
+
+   }
+
+   #navbar section img {
+      margin-top: 100px;
+   }
+
+   .fas {
+      display: block;
+   }
+   .about_images .about_img .overlay {
+      margin-top: -3.8px;
+   }
+
+}
+
+@media only screen and (max-width:800px) {
+   .about_us {
+      flex-direction: column;
+   }
+
+   .about_us section {
+      width: 100%;
+   }
+
+   .about_us section img,
+   .about_images .about_img2 img {
+      width: 100%;
+      height: 270px;
+   }
+
+   .about_images .about_img2 {
+      width: 100%;
+   }
+
+   .sidcup {
+      gap: 20;
+   }
+
+   .sidcup section h4 {
+      font-size: 20px;
+      line-height: 28px;
+   }
+
+   .page_3 .middle_heading {
+      font-size: 20px;
+   }
+
+   .card h1 {
+      font-size: 80px;
+   }
+
+   #footer .text_uppercase h5 {
+      font-size: 16px;
+      line-height: 26px;
+
+   }
+
+   #EAT p {
+      padding: 0px 10%;
+   }
+
+}
+
+@media only screen and (max-width:650px) {
+   .sidcup section img {
+      width: auto !important;
+   }
+
+   .page_3 .middle_heading {
+      font-size: 17px;
+      line-height: 30px;
+   }
+
+   .page_3 .left {
+      top: 7%;
+      left: -8%;
+   }
+
+   .page_3 .right {
+      bottom: 14%;
+      right: 3%;
+   }
+
+   .card .common_style,
+   #footer .common_style {
+      flex-direction: column;
+   }
+
+   .card .common_style .cards,
+   #footer .common_style section {
+      width: 95%;
+   }
+
+   .card h1 {
+      margin-bottom: -2.5%;
+   }
+
+   #footer .common_style {
+      justify-content: baseline;
+   }
+
+   #footer section {
+      padding-top: 25px !important;
+      padding-bottom: 0px !important;
+      z-index: 99;
+   }
+
+   #EAT h1,
+   #EAT h1::before {
+      padding-top: 12%;
+   }
+
+   .about_us section img,
+   .about_images .about_img2 img {
+      width: 100%;
+      height: 290px;
+   }
+   .about_images .about_img .overlay {
+      margin-top: -4px;
+      height: 100%;
+   }
+
+}
